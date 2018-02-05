@@ -49,7 +49,7 @@ public class Student {
 
     public double getBMI() {
         double sum = 0;
-        sum = weight / (height* height);
+        sum = weight / (height * height);
         return sum;
     }
 
@@ -57,4 +57,5 @@ public class Student {
     public String toString() {
         return "Student{" + "name=" + name + ", weight=" + weight + ", height=" + height + '}' + getBMI();
     }
+
 }
