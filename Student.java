@@ -1,4 +1,5 @@
 public class Student {
+
     private String name;
     private double weight;
     private double height;
@@ -24,8 +25,6 @@ public class Student {
         double sum = weight;
         if (weight < 0) {
             sum = -1;
-        } else if (height == 0) {
-            sum = -2;
         }
         return sum;
     }
@@ -58,7 +57,4 @@ public class Student {
     public String toString() {
         return "Student{" + "name=" + name + ", weight=" + weight + ", height=" + height + '}' + getBMI();
     }
-    
-    
-
 }

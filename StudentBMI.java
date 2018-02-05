@@ -1,11 +1,11 @@
 public class StudentBMI {
 
     public static String[] bmiStudents(Student std[]) {
-        String[] something = new String[std.length];
-        for (int i = 0; i < something.length; i++) {
-            something[i] = bmiCategory(std[i]);
+        String[] bmi = new String[std.length];
+        for (int i = 0; i < bmi.length; i++) {
+            bmi[i] = bmiCategory(std[i]);
         }
-        return something;
+        return bmi;
     }
 
     public static String bmiCategory(Student std) {
@@ -18,7 +18,7 @@ public class StudentBMI {
             status = "normal weight";
         } else if (result > 25 && result < 30) {
             status = "over weight";
-        } else if (result == 30 || result > 30) {
+        } else if (result >= 30) {
             status = "obesity";
         }
 
